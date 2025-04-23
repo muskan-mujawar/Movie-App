@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.noto-sans-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgba(186, 213, 236, 0.549);
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.itemsDirection {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.effect:hover {
+  border: 1px solid white;
+  border-radius: 5%;
+  background-color: rgba(247, 232, 205, 0.233);
+}
+
+.effect {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+  grid-template-rows: 3fr 40px 20px 20px;
+  grid-gap: 1rem;
+}
+
+.effect > img {
+  border-radius: 5%;
+  height: 200px;
+}
+.title {
+  grid-row: 2;
+}
+.type {
+  grid-row: 3;
+}
+
+.year {
+  grid-row: 4;
+}
