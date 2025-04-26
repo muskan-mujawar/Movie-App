@@ -10,7 +10,9 @@ function App() {
     <>
       <Navbar />
       <div className="center">
-        <h1 className="noto-sans-font mt-4 pt-4 pb-4 mb-4">Movies</h1>
+        <h2 className="noto-sans-font mt-4 pt-4 pb-4 mb-4">
+          Watch Movies Freeee!
+        </h2>
       </div>
       <div>
         <Search />

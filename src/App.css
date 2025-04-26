@@ -13,7 +13,7 @@ body {
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  color: rgba(186, 213, 236, 0.549);
+  color: rgba(209, 187, 228, 0.933);
 }
 
 .navbar {
@@ -27,17 +27,11 @@ body {
   flex-wrap: wrap;
 }
 
-.effect:hover {
-  border: 1px solid white;
-  border-radius: 5%;
-  background-color: rgba(247, 232, 205, 0.233);
-}
-
 .effect {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
-  grid-template-rows: 3fr 40px 20px 20px;
   grid-gap: 1rem;
+  padding-bottom: 20px;
 }
 
 .effect > img {
@@ -53,4 +47,28 @@ body {
 
 .year {
   grid-row: 4;
+}
+
+.noto-sans-font1 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.text-style {
+  color: rgba(255, 255, 255, 0.405);
+  font-size: 14px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+}
+
+.image > img {
+  height: 250px;
 }
