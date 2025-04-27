@@ -3,7 +3,6 @@ import "./App.css";
 import Card from "./card";
 import { MdSearch } from "react-icons/md";
 import moviepop from "./assets/moviepop.svg";
-import { FaUncharted } from "react-icons/fa";
 
 export default function Search() {
   const [item, setItem] = useState([]);
@@ -31,23 +30,38 @@ export default function Search() {
 
   return (
     <div>
-      <div className="center">
-        <input
-          className="border border-rounded"
-          type="search"
-          placeholder="Search"
-          value={inputValue}
-          onChange={(e) => setInputvalue(e.target.value)}
-          style={{ width: "500px" }}
-        />
-        <button
-          onClick={() => {
-            fetchData();
-            handleClick();
-          }}
-        >
-          <MdSearch />
-        </button>
+      <div className="center ">
+        <div class="input-group mb-3 design  ">
+          <input
+            type="text"
+            className="form-control box input border border-end-0 border-danger"
+            placeholder="Search your movies.. "
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            value={inputValue}
+            onChange={(e) => setInputvalue(e.target.value)}
+          />
+          <button
+            className="btn btn-outline-secondary button border border-start-0 border-danger"
+            onClick={() => {
+              fetchData();
+              handleClick();
+            }}
+            type="button"
+            id="button-addon2"
+            style={{ backgroundColor: "white" }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 50 50"
+              style={{ borderRadius: "25px" }}
+            >
+              <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+            </svg>
+          </button>
+        </div>
       </div>
       {item.length == 0 && (
         <div className="image">

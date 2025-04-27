@@ -32,6 +32,11 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
   grid-gap: 1rem;
   padding-bottom: 20px;
+
+  transition: transform 0.3s ease-in-out;
+}
+.effect:hover {
+  transform: scale(1.1);
 }
 
 .effect > img {
@@ -71,4 +76,27 @@ body {
 
 .image > img {
   height: 250px;
+}
+
+.box {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.design {
+  transition: border-color 0.3s linear;
+}
+
+.design:hover {
+  border-color: grey;
+}
+
+.button {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
 }

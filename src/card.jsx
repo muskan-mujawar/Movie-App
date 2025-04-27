@@ -14,9 +14,8 @@ export default function Card({ item, inputValue }) {
                     {items.Title}
                   </div>
                   <div className="d-flex text-style">
-                    {" "}
                     <div className="type pe-3 text-style">{items.Type}</div>
-                    <div>• {items.Year}</div>
+                    <div>•</div> <div>{items.Year}</div>
                   </div>
                 </div>
               </div>
