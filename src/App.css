@@ -81,22 +81,22 @@ body {
 .box {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+  border: 2px solid white;
+
+  width: 500px;
 }
 
 .design {
-  transition: border-color 0.3s linear;
-}
-
-.design:hover {
-  border-color: grey;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
-  border: none;
 }
 
 .input:focus {
   outline: none;
+  box-shadow: none;
 }

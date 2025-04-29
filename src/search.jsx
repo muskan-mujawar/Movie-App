@@ -8,6 +8,7 @@ export default function Search() {
   const [item, setItem] = useState([]);
   const [inputValue, setInputvalue] = useState("");
   const [result, setResult] = useState("");
+  const [isEmpty, setIsEmpty] = useState("");
 
   function fetchData() {
     if (inputValue === "") return;
@@ -16,7 +17,7 @@ export default function Search() {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        setItem(data.Search);
+        setItem(data.Search ?? []);
         console.log(data);
       });
   }
@@ -34,15 +35,13 @@ export default function Search() {
         <div class="input-group mb-3 design  ">
           <input
             type="text"
-            className="form-control box input border border-end-0 border-danger"
+            className=" box input  "
             placeholder="Search your movies.. "
-            aria-label="Recipient's username"
-            aria-describedby="button-addon2"
             value={inputValue}
             onChange={(e) => setInputvalue(e.target.value)}
           />
           <button
-            className="btn btn-outline-secondary button border border-start-0 border-danger"
+            className="btn  button "
             onClick={() => {
               fetchData();
               handleClick();
