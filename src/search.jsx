@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Card from "./card";
-import { MdSearch } from "react-icons/md";
 import moviepop from "./assets/moviepop.svg";
 
 export default function Search() {
   const [item, setItem] = useState([]);
   const [inputValue, setInputvalue] = useState("");
   const [result, setResult] = useState("");
-  const [isEmpty, setIsEmpty] = useState("");
 
   function fetchData() {
     if (inputValue === "") return;
@@ -32,7 +30,7 @@ export default function Search() {
   return (
     <div>
       <div className="center ">
-        <div class="input-group mb-3 design  ">
+        <div className="input-group mb-3 design  ">
           <input
             type="text"
             className=" box input  "
