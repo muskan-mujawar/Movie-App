@@ -29,6 +29,11 @@ export default function Search() {
 
   return (
     <div>
+      <div className="center">
+        <h2 className="noto-sans-font mt-4 pt-4 pb-4 mb-4">
+          Watch Movies Freeee!
+        </h2>
+      </div>
       <div className="center ">
         <div className="input-group mb-3 design  ">
           <input

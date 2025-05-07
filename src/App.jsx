@@ -13,11 +13,7 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <div className="center">
-          <h2 className="noto-sans-font mt-4 pt-4 pb-4 mb-4">
-            Watch Movies Freeee!
-          </h2>
-        </div>
+
         <Routes>
           <Route path="/" element={<Search />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
