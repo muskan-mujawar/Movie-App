@@ -38,13 +38,13 @@ export default function Search() {
         <div className="input-group mb-3 design  ">
           <input
             type="text"
-            className=" box input  "
+            className=" box input ps-2 grad "
             placeholder="Search your movies.. "
             value={inputValue}
             onChange={(e) => setInputvalue(e.target.value)}
           />
           <button
-            className="btn  button "
+            className="btn  button grad "
             onClick={() => {
               fetchData();
               handleClick();
@@ -71,7 +71,10 @@ export default function Search() {
         </div>
       )}
 
-      <p style={{ color: "white" }} className="ps-4 pt-4">
+      <p
+        style={{ color: "white", fontSize: "20px" }}
+        className="ps-4 pt-4 ms-4"
+      >
         {result}
       </p>
       <Card item={item} inputValue={inputValue} />

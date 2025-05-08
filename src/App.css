@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #010e16;
 }
 
 .center {
@@ -17,7 +17,7 @@ body {
 }
 
 .navbar {
-  background-color: transparent;
+  box-shadow: 0 2px 4px 0 rgba(167, 166, 166, 0.2);
 }
 
 .itemsDirection {
@@ -29,12 +29,15 @@ body {
 
 .effect {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
   grid-gap: 1rem;
-  padding-bottom: 20px;
 
   transition: transform 0.3s ease-in-out;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
+
 .effect:hover {
   transform: scale(1.1);
 }
@@ -109,8 +112,7 @@ body {
 }
 
 .poster {
-  height: 300px;
-  width: 300px;
+  border-radius: 12.5px;
 }
 
 .poster:hover {
@@ -139,13 +141,28 @@ body {
 }
 
 .centerDiv {
+  position: relative;
   display: flex;
   justify-content: center;
+  padding: 40px;
+  margin-top: 40px;
 }
+
 .backColor {
   width: 60vw;
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  background: rgba(0, 0, 0, 0.658); /* Transparent white */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: inset 0 -3em 3em, 0.3em 0.3em 0.2em rgba(255, 255, 255, 0.212);
+}
+
+.div-center {
+  display: flex;
+
+  align-items: center;
+}
+
+.grad {
+  box-shadow: 0.1em 0.1em 0.5em rgb(128, 128, 128);
 }

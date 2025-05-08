@@ -17,13 +17,15 @@ export default function Card({ item, inputValue }) {
               >
                 <img src={items.Poster} />
                 <div>
-                  <div className="title" style={{ color: "white" }}>
-                    {items.Title}
-                    {items.Plot}
-                  </div>
-                  <div className="d-flex text-style">
-                    <div className="type pe-3 text-style">{items.Type}</div>
-                    <div>•</div> <div>{items.Year}</div>
+                  {" "}
+                  <div>
+                    <div className="title" style={{ color: "white" }}>
+                      {items.Title}
+                    </div>
+                    <div className="d-flex text-style">
+                      <div className="type pe-3 text-style">{items.Type}</div>
+                      <div>•</div> <div>{items.Year}</div>
+                    </div>
                   </div>
                 </div>
               </div>
