@@ -40,6 +40,7 @@ body {
 
 .effect:hover {
   transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.081);
 }
 
 .effect > img {
@@ -76,8 +77,8 @@ body {
 .box {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
-  border: 2px solid white;
-
+  border: 2px solid #ccd4d900;
+  background-color: #041b2a00;
   width: 500px;
 }
 
@@ -89,6 +90,7 @@ body {
 .button {
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
+  background-color: #010e16;
 }
 
 .input:focus {
@@ -164,5 +166,6 @@ body {
 }
 
 .grad {
-  box-shadow: 0.1em 0.1em 0.5em rgb(128, 128, 128);
+  box-shadow: 0.1em 0.1em 0.8em rgb(128, 128, 128);
+  border-radius: 25px;
 }
